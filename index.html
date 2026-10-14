@@ -18,26 +18,27 @@
     <span>IMAAD<em>.</em></span>
   </a>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
     <li><a href="#gig">Showcase</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#process">Process</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-cta">
+    <button type="button" class="btn btn-ghost nav-book" data-book-call>Book a Call</button>
     <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#about">About</a>
   <a href="#gig">Showcase</a>
   <a href="#work">Work</a>
   <a href="#services">Services</a>
   <a href="#process">Process</a>
+  <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <a href="#contact" class="btn btn-primary">Start a Project</a>
+  <button type="button" class="btn btn-primary" data-book-call>Book a Call</button>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -54,6 +55,15 @@
     <div class="hero-actions reveal in">
       <a href="#work" class="btn btn-primary">View My Work</a>
       <a href="#contact" class="btn btn-ghost">Start a Project</a>
+    </div>
+    <div class="trust-pill reveal in">
+      <div class="trust-avatars">
+        <img src="assets/creator1.jpg" alt="Creator" loading="lazy">
+        <img src="assets/creator2.jpg" alt="Creator" loading="lazy">
+        <img src="assets/creator3.jpg" alt="Creator" loading="lazy">
+        <img src="assets/creator4.jpg" alt="Creator" loading="lazy">
+      </div>
+      <span class="trust-text">Trusted by 50+ creators</span>
     </div>
     <div class="hero-stats reveal in">
       <div>
@@ -72,48 +82,14 @@
   </div>
 </header>
 
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-photo reveal">
-      <div class="frame">
-        <img src="assets/IMG_2.JPEG" alt="Imaad Chowdhury">
-      </div>
-      <div class="shard-tag tag-1"><span class="ic">✂</span> Cinematic Edit</div>
-      <div class="shard-tag tag-2"><span class="ic">◆</span> Motion Graphics</div>
-      <div class="shard-tag tag-3"><span class="ic">●</span> Color Grade</div>
-    </div>
-    <div class="about-copy reveal">
-      <div class="eyebrow">About Me</div>
-      <h2>The Editor Behind the Frame</h2>
-      <p>I'm <strong>Imaad Chowdhury</strong>, a professional Video Editor and Motion Designer.</p>
-      <p>With <strong>7 years of content creation experience</strong> and <strong>2 years of professional video editing</strong>, I specialize in transforming raw footage into visually compelling content that captures attention and keeps audiences engaged. As a content strategist, I focus not only on making videos look great but also on ensuring they deliver results and drive conversions.</p>
-      <p>From viral short-form reels and social media content to long-form YouTube videos, motion graphics, and commercial advertisements — I bring creativity, storytelling, and precision to every project. My goal is simple: <strong>to make your content stand out, connect with the right audience, and leave a lasting impression.</strong></p>
-      <div class="about-pills">
-        <span class="pill">YouTube Editing</span>
-        <span class="pill">Reels &amp; Shorts</span>
-        <span class="pill">Motion Graphics</span>
-        <span class="pill">Commercial Ads</span>
-        <span class="pill">Content Strategy</span>
-        <span class="pill">Social Media Content</span>
-      </div>
-      <div class="about-socials">
-        <a href="https://www.facebook.com/imad.chowdhury.79" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/e_madcreations" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.62.07 4.81 0 3.2-.01 3.56-.07 4.81-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.61.07-4.85.07-3.2 0-3.6-.01-4.85-.07-3.27-.15-4.77-1.7-4.92-4.92C2.21 15.6 2.2 15.24 2.2 12c0-3.2.01-3.56.07-4.81C2.42 3.96 3.93 2.4 7.15 2.27 8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-2.27.1-3.33 1.18-3.43 3.43C3.78 8.5 3.77 8.85 3.77 12s.01 3.5.07 4.73c.1 2.24 1.16 3.32 3.43 3.43 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c2.26-.1 3.33-1.18 3.43-3.43.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.1-2.25-1.17-3.33-3.43-3.43A66 66 0 0 0 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3zm5.15-1.99a1.16 1.16 0 1 1-2.32 0 1.16 1.16 0 0 1 2.32 0z"/></svg>
-        </a>
-        <a href="https://www.youtube.com/@e-madcreations4944" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 7.2s-.23-1.64-.95-2.36c-.9-.95-1.92-.95-2.38-1.01C16.84 3.6 12 3.6 12 3.6h-.01s-4.84 0-8.17.23c-.46.06-1.48.06-2.38 1.01C.72 5.56.5 7.2.5 7.2S.27 9.12.27 11.03v1.78c0 1.92.23 3.84.23 3.84s.23 1.64.94 2.36c.9.95 2.08.92 2.61 1.02 1.9.18 7.95.24 7.95.24s4.85-.01 8.18-.24c.46-.06 1.48-.06 2.38-1.02.72-.72.95-2.36.95-2.36s.23-1.92.23-3.84v-1.78c0-1.91-.23-3.83-.23-3.83zM9.7 14.93V8.41l6.27 3.27z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/chowdhuryimaad/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.04 0 4.78 2.66 4.78 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg>
-        </a>
-      </div>
-    </div>
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="marquee" aria-label="Highlights">
+  <div class="marquee-track">
+    <div class="marquee-group"><span class="marquee-item">Fast Delivery</span><span class="marquee-item">200+ Videos Delivered</span><span class="marquee-item">4.9 Stars Rating</span><span class="marquee-item">Custom Color Grading</span><span class="marquee-item">Client Favorite</span><span class="marquee-item">Fast Delivery</span><span class="marquee-item">200+ Videos Delivered</span><span class="marquee-item">4.9 Stars Rating</span><span class="marquee-item">Custom Color Grading</span><span class="marquee-item">Client Favorite</span></div>
+    <div class="marquee-group" aria-hidden="true"><span class="marquee-item">Fast Delivery</span><span class="marquee-item">200+ Videos Delivered</span><span class="marquee-item">4.9 Stars Rating</span><span class="marquee-item">Custom Color Grading</span><span class="marquee-item">Client Favorite</span><span class="marquee-item">Fast Delivery</span><span class="marquee-item">200+ Videos Delivered</span><span class="marquee-item">4.9 Stars Rating</span><span class="marquee-item">Custom Color Grading</span><span class="marquee-item">Client Favorite</span></div>
   </div>
-</section>
+</div>
+
 
 <!-- ============ GIG VIDEO ============ -->
 <section class="gig-video" id="gig">
@@ -151,7 +127,9 @@
     </div>
 
     <div class="video-panel active" id="panel-shorts">
-      <div class="shorts-grid">
+      <div class="shorts-scroller" id="shortsScroller">
+      <button type="button" class="scroll-arrow left" data-dir="-1" aria-label="Scroll shorts left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="shorts-grid" id="shortsGrid">
         <div class="iframe-card short-card">
           <div class="iframe-container ratio-9-16">
             <iframe src="https://www.youtube.com/embed/MKglZIyKjCs" title="Short 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
@@ -268,6 +246,8 @@
           </div>
         </div>
       </div>
+      <button type="button" class="scroll-arrow right" data-dir="1" aria-label="Scroll shorts right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
     </div>
 
     <div class="video-panel" id="panel-videos">
@@ -358,34 +338,8 @@
   </div>
 </section>
 
-<!-- ============ MY JOURNEY ============ -->
-<section class="journey-section" id="journey">
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">The Journey</div>
-      <h2>From Passion to Profession</h2>
-      <p style="margin-left:auto;margin-right:auto;">Seven years of creating content, two years of professional editing — here's the story of how I found my craft and why I do what I do. Watch the videos that capture this journey.</p>
-    </div>
-    <div class="journey-img-wrap reveal">
-      <img src="assets/IMG_3.jpeg" alt="Imaad Chowdhury" class="journey-img">
-    </div>
-    <div class="journey-videos-grid reveal">
-      <div class="iframe-card">
-        <div class="iframe-container ratio-16-9">
-          <iframe src="https://www.youtube.com/embed/4AJm9ZsirgY" title="My Journey - Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-      <div class="iframe-card">
-        <div class="iframe-container ratio-16-9">
-          <iframe src="https://www.youtube.com/embed/DukNI9cO6fw" title="My Journey - Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ WHY MOST CREATORS BURN OUT ============ -->
-<section class="burnout-section" id="burnout">
+<section class="burnout-section" id="burnout" hidden>
   <div class="container">
     <div class="section-head center reveal">
       <div class="eyebrow" style="justify-content:center;">The Problem</div>
@@ -470,6 +424,83 @@
   </div>
 </section>
 
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center reveal">
+      <h2>What people are saying</h2>
+    </div>
+    <div class="testi-marquee reveal">
+      <div class="testi-track">
+        <div class="testi-group"><img src="assets/testimonials/t1.jpg" alt="Client testimonial 1" loading="lazy"><img src="assets/testimonials/t2.jpg" alt="Client testimonial 2" loading="lazy"><img src="assets/testimonials/t3.jpg" alt="Client testimonial 3" loading="lazy"><img src="assets/testimonials/t4.jpg" alt="Client testimonial 4" loading="lazy"><img src="assets/testimonials/t5.jpg" alt="Client testimonial 5" loading="lazy"><img src="assets/testimonials/t6.jpg" alt="Client testimonial 6" loading="lazy"><img src="assets/testimonials/t7.jpg" alt="Client testimonial 7" loading="lazy"><img src="assets/testimonials/t8.jpg" alt="Client testimonial 8" loading="lazy"><img src="assets/testimonials/t9.jpg" alt="Client testimonial 9" loading="lazy"><img src="assets/testimonials/t10.jpg" alt="Client testimonial 10" loading="lazy"></div>
+        <div class="testi-group" aria-hidden="true"><img src="assets/testimonials/t1.jpg" alt="Client testimonial 1" loading="lazy"><img src="assets/testimonials/t2.jpg" alt="Client testimonial 2" loading="lazy"><img src="assets/testimonials/t3.jpg" alt="Client testimonial 3" loading="lazy"><img src="assets/testimonials/t4.jpg" alt="Client testimonial 4" loading="lazy"><img src="assets/testimonials/t5.jpg" alt="Client testimonial 5" loading="lazy"><img src="assets/testimonials/t6.jpg" alt="Client testimonial 6" loading="lazy"><img src="assets/testimonials/t7.jpg" alt="Client testimonial 7" loading="lazy"><img src="assets/testimonials/t8.jpg" alt="Client testimonial 8" loading="lazy"><img src="assets/testimonials/t9.jpg" alt="Client testimonial 9" loading="lazy"><img src="assets/testimonials/t10.jpg" alt="Client testimonial 10" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ME (about + journey) ============ -->
+<section class="about" id="about">
+  <div class="container about-head reveal">
+    <div class="eyebrow">About Me</div>
+  </div>
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <div class="frame">
+        <img src="assets/IMG_2.JPEG" alt="Imaad Chowdhury">
+      </div>
+      <div class="shard-tag tag-1"><span class="ic">✂</span> Cinematic Edit</div>
+      <div class="shard-tag tag-2"><span class="ic">◆</span> Motion Graphics</div>
+      <div class="shard-tag tag-3"><span class="ic">●</span> Color Grade</div>
+    </div>
+    <div class="about-copy reveal">
+      <h2>The Editor Behind the Frame</h2>
+      <p>I'm <strong>Imaad Chowdhury</strong>, a professional Video Editor and Motion Designer.</p>
+      <p>With <strong>7 years of content creation experience</strong> and <strong>2 years of professional video editing</strong>, I specialize in transforming raw footage into visually compelling content that captures attention and keeps audiences engaged. As a content strategist, I focus not only on making videos look great but also on ensuring they deliver results and drive conversions.</p>
+      <p>From viral short-form reels and social media content to long-form YouTube videos, motion graphics, and commercial advertisements — I bring creativity, storytelling, and precision to every project. My goal is simple: <strong>to make your content stand out, connect with the right audience, and leave a lasting impression.</strong></p>
+      <div class="about-pills">
+        <span class="pill">YouTube Editing</span>
+        <span class="pill">Reels &amp; Shorts</span>
+        <span class="pill">Motion Graphics</span>
+        <span class="pill">Commercial Ads</span>
+        <span class="pill">Content Strategy</span>
+        <span class="pill">Social Media Content</span>
+      </div>
+      <div class="about-socials">
+        <a href="https://www.facebook.com/imad.chowdhury.79" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/e_madcreations" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.25.07 1.62.07 4.81 0 3.2-.01 3.56-.07 4.81-.15 3.23-1.66 4.77-4.92 4.92-1.25.06-1.61.07-4.85.07-3.2 0-3.6-.01-4.85-.07-3.27-.15-4.77-1.7-4.92-4.92C2.21 15.6 2.2 15.24 2.2 12c0-3.2.01-3.56.07-4.81C2.42 3.96 3.93 2.4 7.15 2.27 8.4 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-2.27.1-3.33 1.18-3.43 3.43C3.78 8.5 3.77 8.85 3.77 12s.01 3.5.07 4.73c.1 2.24 1.16 3.32 3.43 3.43 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c2.26-.1 3.33-1.18 3.43-3.43.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.1-2.25-1.17-3.33-3.43-3.43A66 66 0 0 0 12 4zm0 3.05a4.95 4.95 0 1 1 0 9.9 4.95 4.95 0 0 1 0-9.9zm0 1.8a3.15 3.15 0 1 0 0 6.3 3.15 3.15 0 0 0 0-6.3zm5.15-1.99a1.16 1.16 0 1 1-2.32 0 1.16 1.16 0 0 1 2.32 0z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@e-madcreations4944" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 7.2s-.23-1.64-.95-2.36c-.9-.95-1.92-.95-2.38-1.01C16.84 3.6 12 3.6 12 3.6h-.01s-4.84 0-8.17.23c-.46.06-1.48.06-2.38 1.01C.72 5.56.5 7.2.5 7.2S.27 9.12.27 11.03v1.78c0 1.92.23 3.84.23 3.84s.23 1.64.94 2.36c.9.95 2.08.92 2.61 1.02 1.9.18 7.95.24 7.95.24s4.85-.01 8.18-.24c.46-.06 1.48-.06 2.38-1.02.72-.72.95-2.36.95-2.36s.23-1.92.23-3.84v-1.78c0-1.91-.23-3.83-.23-3.83zM9.7 14.93V8.41l6.27 3.27z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/chowdhuryimaad/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.04 0 4.78 2.66 4.78 6.12V21h-4v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container about-journey">
+    <div class="journey-img-wrap reveal">
+      <img src="assets/IMG_3.jpeg" alt="Imaad Chowdhury" class="journey-img">
+    </div>
+    <div class="journey-videos-grid reveal">
+      <div class="iframe-card">
+        <div class="iframe-container ratio-16-9">
+          <iframe src="https://www.youtube.com/embed/tCfKqD-W9LM" title="My Journey - Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="iframe-card">
+        <div class="iframe-container ratio-16-9">
+          <iframe src="https://www.youtube.com/embed/DukNI9cO6fw" title="My Journey - Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="container">
@@ -477,11 +508,16 @@
       <div class="eyebrow" style="justify-content:center;">Connect With Me</div>
       <h2>Let's Make Your Content<br>Beyond Creative Limits.</h2>
       <p>Have a project in mind? Send your footage, your idea, or just say hello — I usually reply within 24 hours.</p>
+      <div class="contact-cta">
+        <button type="button" class="btn btn-ghost" data-book-call>Book a Call</button>
+      </div>
       <div class="contact-email-text">
-        Email me at: <a href="mailto:sheikhimad707@gmail.com">sheikhimad707@gmail.com</a>
+        <span class="contact-icon" role="img" aria-label="Email"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"/><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"/><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"/><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"/><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0C43.076,8,45,9.924,45,12.298z"/></svg></span>
+        <a href="mailto:sheikhimad707@gmail.com">sheikhimad707@gmail.com</a>
       </div>
       <div class="contact-phone-text">
-        Contact no. <a href="tel:01676289444">01676289444</a>
+        <span class="contact-icon contact-icon-phone" role="img" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <a href="tel:01676289444">01676289444</a>
       </div>
     </div>
   </div>
@@ -510,6 +546,102 @@
 
 <button class="to-top" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 4l8 8h-5v8h-6v-8H4z"/></svg></button>
 
+<!-- ============ BOOK A CALL MODAL ============ -->
+<div class="book-modal" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="bookTitle" aria-hidden="true">
+  <div class="book-panel">
+    <button type="button" class="book-close" data-close aria-label="Close">&times;</button>
+    <div class="book-title" id="bookTitle">Book a call</div>
+    <div class="book-sub">Tell me about your project, then pick an app</div>
+    <textarea id="bookMsg" rows="5">Hi Imaad! I'd like to book a call to talk about a video editing project. Could we find a time that works?</textarea>
+    <button type="button" class="book-option" data-send="whatsapp">Send on WhatsApp</button>
+    <button type="button" class="book-option" data-send="messenger">Send on Messenger</button>
+    <button type="button" class="book-option" data-send="instagram">Send on Instagram</button>
+    <p class="book-hint">WhatsApp opens with your message ready. For Messenger and Instagram the message is copied for you: just paste it in the chat and press send. You can edit the message above first.</p>
+  </div>
+</div>
+
+<div class="sleepy-editor sleeping" id="sleepyEditor" aria-label="Sleepy video editor mascot. Hover or drag to wake him up.">
+  <div class="se-bubble">Editing&hellip;</div>
+  <svg viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sleepy video editor mascot">
+  <defs>
+    <g id="seHead">
+      <ellipse cx="66" cy="48" rx="31" ry="22" fill="#17110f"/>
+      <circle cx="66" cy="60" r="27" fill="#f1c9a5"/>
+      <path d="M39 58 Q39 33 66 33 Q93 33 93 58 Q84 46 66 47 Q48 46 39 58Z" fill="#17110f"/>
+      <circle cx="47" cy="40" r="8" fill="#17110f"/><circle cx="59" cy="33" r="9" fill="#17110f"/>
+      <circle cx="74" cy="33" r="9" fill="#17110f"/><circle cx="86" cy="40" r="8" fill="#17110f"/>
+      <path d="M38 58 Q37 27 66 27 Q95 27 94 58" fill="none" stroke="#e8141c" stroke-width="5" stroke-linecap="round"/>
+      <rect x="31" y="52" width="11" height="20" rx="5.5" fill="#e8141c"/><rect x="90" y="52" width="11" height="20" rx="5.5" fill="#e8141c"/>
+      <rect x="34" y="56" width="5" height="12" rx="2.5" fill="#5c0d10"/><rect x="93" y="56" width="5" height="12" rx="2.5" fill="#5c0d10"/>
+      <ellipse cx="50" cy="71" rx="5" ry="3" fill="#ff8a8a" opacity=".45"/><ellipse cx="82" cy="71" rx="5" ry="3" fill="#ff8a8a" opacity=".45"/>
+    </g>
+  </defs>
+
+  <ellipse cx="110" cy="152" rx="98" ry="8" fill="rgba(232,20,28,.18)"/>
+  <rect x="24" y="138" width="10" height="16" rx="2" fill="#18181b"/><rect x="186" y="138" width="10" height="16" rx="2" fill="#18181b"/>
+
+  <!-- AWAKE: behind the desk -->
+  <g class="se-pose se-awake-pose">
+    <rect x="38" y="90" width="56" height="44" rx="18" fill="#232327"/>
+    <rect x="38" y="113" width="56" height="5" fill="#e8141c"/>
+    <ellipse cx="66" cy="90" rx="18" ry="7" fill="#1a1a1d"/>
+    <line x1="60" y1="94" x2="59" y2="106" stroke="#f5f4f2" stroke-width="1.6" stroke-linecap="round"/>
+    <line x1="72" y1="94" x2="73" y2="106" stroke="#f5f4f2" stroke-width="1.6" stroke-linecap="round"/>
+    <use href="#seHead"/>
+    <g class="se-eyes">
+      <ellipse cx="57" cy="62" rx="4.5" ry="5.5" fill="#1a1214"/><ellipse cx="78" cy="62" rx="4.5" ry="5.5" fill="#1a1214"/>
+      <circle cx="59" cy="60" r="1.7" fill="#fff"/><circle cx="80" cy="60" r="1.7" fill="#fff"/>
+    </g>
+    <path d="M61 73 Q67 80 73 73" fill="none" stroke="#8a3030" stroke-width="2.2" stroke-linecap="round"/>
+    <text class="se-note n1" x="20" y="50" font-size="14" fill="#ff3b3b">&#9834;</text>
+    <text class="se-note n2" x="104" y="40" font-size="12" fill="#ff3b3b">&#9835;</text>
+  </g>
+
+  <!-- DESK -->
+  <rect x="6" y="128" width="208" height="12" rx="6" fill="#1f1f23" stroke="#2a2a2e"/>
+  <rect x="10" y="128" width="200" height="3" rx="1.5" fill="#e8141c"/>
+
+  <!-- LAPTOP -->
+  <rect x="108" y="126" width="100" height="6" rx="3" fill="#3a3a40"/>
+  <g class="se-screen">
+    <rect x="114" y="72" width="88" height="54" rx="6" fill="#0e0e10" stroke="#3a3a40" stroke-width="2"/>
+    <rect x="119" y="77" width="78" height="44" rx="3" fill="#12080a"/>
+    <line x1="123" y1="84" x2="193" y2="84" stroke="#3a3a40" stroke-width="1"/>
+    <rect x="123" y="88" width="28" height="8" rx="2" fill="#e8141c"/><rect x="153" y="88" width="20" height="8" rx="2" fill="#ff3b3b"/><rect x="176" y="88" width="17" height="8" rx="2" fill="#5c0d10"/>
+    <rect x="123" y="99" width="16" height="8" rx="2" fill="#5c0d10"/><rect x="142" y="99" width="32" height="8" rx="2" fill="#e8141c"/><rect x="177" y="99" width="16" height="8" rx="2" fill="#3a3a40"/>
+    <path d="M123 114 l2 -2 l2 5 l2 -3 l2 6 l2 -2 l2 4 l2 -6 l2 3 l2 -5 l2 2 l2 -4 l2 6 l2 -3 l2 5 l2 -2 l2 4 l2 -5 l2 3" fill="none" stroke="#5c5c64" stroke-width="1.4" stroke-linejoin="round"/>
+    <g class="se-playhead"><line x1="123" y1="81" x2="123" y2="119" stroke="#fff" stroke-width="1.6"/><polygon points="119,80 127,80 123,85" fill="#fff"/></g>
+  </g>
+
+  <!-- AWAKE: arms in front of the desk -->
+  <g class="se-pose se-awake-pose">
+    <path d="M84 102 Q104 124 124 124" fill="none" stroke="#2c2c31" stroke-width="12" stroke-linecap="round"/>
+    <path d="M48 104 Q68 134 108 127" fill="none" stroke="#2c2c31" stroke-width="12" stroke-linecap="round"/>
+    <g class="se-hand se-hand-a"><circle cx="127" cy="123" r="6.5" fill="#f1c9a5"/></g>
+    <g class="se-hand se-hand-b"><circle cx="112" cy="126" r="6.5" fill="#f1c9a5"/></g>
+    <path class="se-spark s1" d="M150 60 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#ff3b3b"/>
+    <path class="se-spark s2" d="M206 70 l1.5 4 4 1.5 -4 1.5 -1.5 4 -1.5 -4 -4 -1.5 4 -1.5z" fill="#ff3b3b"/>
+  </g>
+
+  <!-- SLEEPING -->
+  <g class="se-pose se-sleep-pose"><g class="se-breathe">
+    <rect x="34" y="112" width="62" height="26" rx="13" fill="#232327"/>
+    <rect x="22" y="122" width="90" height="15" rx="7.5" fill="#2c2c31"/>
+    <circle cx="112" cy="130" r="6.5" fill="#f1c9a5"/>
+    <g transform="translate(0,40) rotate(-9 66 60)">
+      <use href="#seHead"/>
+      <path d="M49 62 Q55 67 61 62" fill="none" stroke="#17110f" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M71 62 Q77 67 83 62" fill="none" stroke="#17110f" stroke-width="2.6" stroke-linecap="round"/>
+      <ellipse cx="66" cy="75" rx="3" ry="3.4" fill="#8a3030"/>
+      <circle class="se-snore" cx="72" cy="68" r="4" fill="none" stroke="#f5f4f2" stroke-width="1.3" opacity=".7"/>
+    </g>
+  </g>
+    <text class="se-z z1" x="96" y="78" font-size="16">Z</text>
+    <text class="se-z z2" x="108" y="62" font-size="13">Z</text>
+    <text class="se-z z3" x="119" y="48" font-size="10">Z</text>
+  </g>
+</svg>
+</div>
 <div class="cursor-dot" id="cursorDot"></div>
 <script src="script.js"></script>
 </body>
