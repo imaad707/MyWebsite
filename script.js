@@ -8,16 +8,21 @@ window.addEventListener('scroll', () => {
 // ===== Mobile menu =====
 const burger = document.getElementById('burger');
 const mobileMenu = document.getElementById('mobileMenu');
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
-});
-mobileMenu.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    burger.classList.remove('active');
-    mobileMenu.classList.remove('open');
+if (burger && mobileMenu) {
+  burger.setAttribute('aria-expanded', 'false');
+  burger.addEventListener('click', () => {
+    const isOpen = burger.classList.toggle('active');
+    mobileMenu.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', String(isOpen));
   });
-});
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      burger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 // ===== Recent Work toggle (Shorts / Videos) =====
 const tglBtns = document.querySelectorAll('.tgl-btn');
@@ -38,15 +43,19 @@ document.getElementById('toTop').addEventListener('click', () => {
 
 // ===== Scroll reveal =====
 const revealEls = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in');
-      io.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-revealEls.forEach(el => io.observe(el));
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('in'));
+}
 
 // ===== Smooth anchor scroll w/ offset for fixed nav =====
 document.querySelectorAll('a[href^="#"]').forEach(link => {
@@ -104,48 +113,9 @@ if (dot && !window.matchMedia('(hover:none)').matches) {
   })();
 }
 
-// ===== Only one video plays at a time =====
-(function () {
-  const frames = [...document.querySelectorAll('iframe[src*="youtube.com/embed"]')];
-  if (!frames.length) return;
-
-  frames.forEach(f => {
-    const u = new URL(f.src);
-    u.searchParams.set('enablejsapi', '1');
-    f.src = u.toString();
-  });
-
-  const players = [];
-  window.onYouTubeIframeAPIReady = () => {
-    frames.forEach(f => {
-      const p = new YT.Player(f, {
-        events: {
-          onStateChange: e => {
-            if (e.data === YT.PlayerState.PLAYING) {
-              players.forEach(o => {
-                if (o !== p && o.getPlayerState && o.getPlayerState() === YT.PlayerState.PLAYING) {
-                  o.pauseVideo();
-                }
-              });
-            }
-          }
-        }
-      });
-      players.push(p);
-    });
-  };
-
-  document.querySelectorAll('.tgl-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      players.forEach(o => o.pauseVideo && o.pauseVideo());
-    });
-  });
-
-  const s = document.createElement('script');
-  s.src = 'https://www.youtube.com/iframe_api';
-  document.head.appendChild(s);
-})();
-
+// ===== YouTube embeds =====
+// Keep native lazy-loaded YouTube iframes. Do not create a YouTube API player
+// for every video at page load; many simultaneous players can overwhelm mobile browsers.
 // ===== Sleepy editor mascot: hover wakes him up, drag to move =====
 (function () {
   const box = document.getElementById('sleepyEditor');
