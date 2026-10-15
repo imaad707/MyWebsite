@@ -1193,3 +1193,16 @@ body.modal-open{ overflow:hidden; }
 .about-head{ margin-bottom:40px; }
 @media (max-width:720px){ .eyebrow{ font-size:14px; } .about-head{ margin-bottom:28px; } }
 [hidden]{ display:none !important; }
+
+/* =========================================================
+   MOBILE FIXES
+   ========================================================= */
+html, body{ max-width:100%; overflow-x:hidden; }
+.hero, .gig-video, .work-section, .services, .process, .testimonials, .about, .contact{ overflow-x:clip; }
+html{ -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+@media (max-width:720px){
+  /* the sleepy mascot covers text and blocks scrolling on phones, so hide it there */
+  .sleepy-editor{ display:none; }
+  /* bigger testimonial cards so the text is readable */
+  .testi-group img{ height:210px; }
+}
